@@ -44,7 +44,7 @@
 ```javascript
 {
     "errcode": 0
-争讼
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
