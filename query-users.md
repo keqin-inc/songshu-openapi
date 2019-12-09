@@ -6,7 +6,8 @@
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  用户查询接口
+用户查询接口，示例  
+https://api.example.com/v1/wx570bc396a51b8ff8/users?openid=oP7TW1X--NjWFwpApzzsS75vVHuI,oP7TW1Q2eC0T-p3TI5j5cQakwbcs&time=1575883879
 {% endapi-method-description %}
 
 {% api-method-spec %}
