@@ -9,8 +9,6 @@ NOTE: 小说平台提供 API，URL 前缀可自行决定，例如 `https://api.e
 
 请使用随机 32 位字符当作接口 Secret 并同步给我们
 
-
-:sectnums:
 ## 用户查询
 
 `/${appid}/users?openid=${openid},${openid}&time=${time}`
