@@ -94,5 +94,7 @@ Post 请求 Body 正文为 json 格式字符串，例如
 }
 ```
 
-
+{% hint style="danger" %}
+通知推送不需要完全实时，例如每五分钟推送一次亦可。
+{% endhint %}
 
