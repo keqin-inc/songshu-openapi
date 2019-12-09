@@ -168,7 +168,7 @@ https://mp-notify-api.sdpk.com/v1/wx570bc396a51b8ff8/order/420000042920191207160
 CAUTION: 通知推送不需要完全实时，例如每五分钟推送一次亦可。
 
 
-== 用户信息变更通知（每日推送）
+=== 用户信息变更通知（每日推送）
 
 https://mp-notify-api.sdpku.com/v1/${appid}/user
 
