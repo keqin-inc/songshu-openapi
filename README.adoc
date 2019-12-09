@@ -145,10 +145,10 @@ CAUTION: 一部分平台在支付成功时才有订单号，可留空。
 
 === 订单创建/支付通知（接近实时推送）
 
-https://mp-notify-api.sdpk.com/v1/${appid}/order/${orderId}
+https://mp-notify-api.sdpku.com/v1/${appid}/order/${orderId}
 
 示例
-https://mp-notify-api.sdpk.com/v1/wx570bc396a51b8ff8/order/4200000429201912071609677638
+https://mp-notify-api.sdpku.com/v1/wx570bc396a51b8ff8/order/4200000429201912071609677638
 
 - 需要推送的结构和订单查询中的单条订单数据一致
 - 订单在创建时、支付时分别推送一次
@@ -173,7 +173,7 @@ CAUTION: 通知推送不需要完全实时，例如每五分钟推送一次亦�
 https://mp-notify-api.sdpku.com/v1/${appid}/user
 
 示例
-https://mp-notify-api.sdpk.com/v1/wx570bc396a51b8ff8/user
+https://mp-notify-api.sdpku.com/v1/wx570bc396a51b8ff8/user
 
 当用户**如下信息**在当天发生变化时，次日凌晨需要把此类用户推送至此接口，推送的内容和用户查询返回的结构完全一致。释义见上面表格。
 
