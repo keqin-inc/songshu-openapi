@@ -2,15 +2,15 @@
 
 ### Secret 
 
-需要同步一份 32 位字符串作为 Secret。算法为 X-Hub-Signature，即：`hash_hmac("sha1", "数据", $secret);`Node.Js 可参考 [x-hub-signature](https://github.com/compwright/x-hub-signature) 库，Java 可参考 [xhub4j](https://github.com/McFoggy/xhub4j) 库
+需要和我们同步一份 32 位字符串作为 Secret。算法为 X-Hub-Signature，即：`hash_hmac("sha1", "数据", $secret);`Node.Js 可参考 [x-hub-signature](https://github.com/compwright/x-hub-signature) 库，Java 可参考 [xhub4j](https://github.com/McFoggy/xhub4j) 库
 
-### 查询接口：查询参数中的 time 参数
+### 查询接口： time 参数校验
 
 我们会在请求接口时附带 time 参数，为当前服务器 Unix 时间戳。如果超过一定时间，接口需要返回错误信息。
 
-### 查询接口：Header 中的签名
+### 查询接口：Header 中 X-Hub-Signature 签名校验
 
-这不是标准的 X-Hub-Signature，签名的数据为 URL 中的路径、查询参数部分，即 PHP 中的 `$_SERVER['REQUEST_URI']` 变量，内容示例：`/v1/wx570bc396a51b8ff8/users?time=1575883879&openid=oP7TW1X--NjWFwpApzzsS75vVHuI,oP7TW1Q2eC0T-p3TI5j5cQakwbcs`
+签名的数据为 URL 中的路径、查询参数部分，非标准的 X-Hub-Signature，即 PHP 中的 `$_SERVER['REQUEST_URI']` 变量，例如：`/v1/wx570bc396a51b8ff8/users?time=1575883879&openid=oP7TW1X--NjWFwpApzzsS75vVHuI,oP7TW1Q2eC0T-p3TI5j5cQakwbcs`
 
 **为以下您需要实现的校验，代码供参考**
 
