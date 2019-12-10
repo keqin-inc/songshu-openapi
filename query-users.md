@@ -75,14 +75,14 @@ JSON 格式的用户数组，每个用户为一项。
 ### 字段含义
 
 | 字段 | 含义 | 类型 | 示例值 |
-| :--- | :--- | :--- | :--- |
-| openid | 用户 OpenId | string | "oP7TW1X--NjWFwpApzzsS75vVHuI" |
-| balance | 书币余额 | 浮点 | 21.00 |
-| ticket | 书券余额 | 浮点 | 400 |
-| charged | 充值过的总金额 | 浮点 | 400 |
-| reg\_time | 注册时间 | string | "2019-08-01 12:43:23" |
-| last\_read\_book | 最后阅读记录书名 | string | "都市极品医神" |
-| last\_read\_time | 最后阅读时间 | string | "2019-11-01 12:43:23" |
+| ---: | :--- | :--- | :--- |
+| **openid** | 用户 OpenId | string | "oP7TW1X--NjWFwpApzzsS75vVHuI" |
+| **balance** | 书币余额 | 浮点 | 21.00 |
+| **ticket** | 书券余额 | 浮点 | 400 |
+| **charged** | 充值过的总金额 | 浮点 | 400 |
+| **reg\_time** | 注册时间 | string | "2019-08-01 12:43:23" |
+| **last\_read\_book** | 最后阅读记录书名 | string | "都市极品医神" |
+| **last\_read\_time** | 最后阅读时间 | string | "2019-11-01 12:43:23" |
 
 #### 注：
 

@@ -79,22 +79,22 @@
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* page 当前页数
-* total 当前条件下的订单总数
-* page\_size 每页订单数
-* orders 订单列表数组
+* **page** 当前页数
+* **total** 当前条件下的订单总数
+* **page\_size** 每页订单数
+* **orders** 订单列表数组
 
 orders 字段结构
 
 | 字段 | 含义 | 类型 | 示例值 |
-| :--- | :--- | :--- | :--- |
-| order\_id | 平台唯一订单号 | string | "4200000429201912071609677638" |
-| amount | 订单金额 | float | 80.00 |
-| create\_time | 订单创建时间 | string | "2019-12-07 23:59:41" |
-| pay\_time | 订单支付时间 | string | "2019-12-07 23:59:46" |
-| pay\_status | 支付状态，0：未支付，1：已支付 | int | 1 |
-| openid | 用户的OpenId | string | "oBHx1s775pANd1HWQ-aS-ou49kNA" |
-| book | 订单关联的图书，无时留空 | string | "他与星辰皆璀璨" |
+| ---: | :--- | :--- | :--- |
+| **order\_id** | 平台唯一订单号 | string | "4200000429201912071609677638" |
+| **amount** | 订单金额 | float | 80.00 |
+| **create\_time** | 订单创建时间 | string | "2019-12-07 23:59:41" |
+| **pay\_time** | 订单支付时间 | string | "2019-12-07 23:59:46" |
+| **pay\_status** | 支付状态，0：未支付，1：已支付 | int | 1 |
+| **openid** | 用户的OpenId | string | "oBHx1s775pANd1HWQ-aS-ou49kNA" |
+| **book** | 订单关联的图书，无时留空 | string | "他与星辰皆璀璨" |
 
 {% hint style="danger" %}
 一部分平台以支付成功时才有订单号，这种情况下的未支付订单的订单号可留空。
