@@ -116,8 +116,8 @@ Query Links
       <td style="text-align:left">&#x63A8;&#x5E7F;URL</td>
       <td style="text-align:left">string</td>
       <td style="text-align:left">
-        <p>&quot;https://100336.jiangdia.com/channel/</p>
-        <p>read/1/98582/32037240/112845/0&quot;</p>
+        <p>&quot;https:\/\/100336.jiangdia.com\/channel\</p>
+        <p>/read\/1\/98582\/32037240\/112845\/0&quot;</p>
       </td>
     </tr>
     <tr>
@@ -217,5 +217,7 @@ Query Links
         <td style="text-align:left">0</td>
     </tr>
   </tbody>
-</table>
+</table>{% hint style="danger" %}
+请确保 link\_id 在单个公众号范围内是唯一的。
+{% endhint %}
 
