@@ -53,7 +53,7 @@ Query Links
 {% endapi-method-response-example-description %}
 
 ```javascript
-[
+{
     "page": 1,
     "total": 21,
     "page_size": 100,
@@ -74,7 +74,7 @@ Query Links
         "remark": "",
         "is_deleted": 0
     }]
-]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
