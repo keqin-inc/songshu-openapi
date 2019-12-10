@@ -81,13 +81,9 @@ Query Links
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% hint style="info" %}
 一般只指定 link\_id 或 begin/end。创建时间范围用于更新当日创建的链接，link\_id 用于批量更新指定的链接统计数据。
 {% endhint %}
-
-
 
 * **page** 当前页数
 * **total** 当前条件下的链接总数
