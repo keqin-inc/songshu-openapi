@@ -3,7 +3,7 @@
 批量查询推广链接及其统计数据。需求场景：用于定时更新链接的统计数据。
 
 {% hint style="success" %}
-您**需要实现此接口**
+您**需要实现此接口。这里指推广里的“链接推广“，并且合并内推、外推两种形式，两者的主要区别是：是否强制关注、是否有新增关注数据项。**
 {% endhint %}
 
 {% api-method method="get" host="/" path=":appid/links?page=:page&link\_id=:link\_id1,:link\_id2&begin=:begin&end=:end&time=:time" %}
