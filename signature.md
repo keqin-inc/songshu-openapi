@@ -84,5 +84,37 @@ $content = curl_exec($ch);
 var_dump(json_decode($content));
 ```
 
+#### Guzzle 代码示例
 
+```php
+<?php
+$client = new GuzzleHttp\Client();
+$key = ""; // 这里请获取自己的 Key
+$url = "http://dev-mp-notify-api.sdpku.com/v1/costs";
+
+$body = json_encode([
+    [
+      'appid' => 'wxe8ff2cd3378b31da',
+      'date' => '2020-03-11',
+      'cost' => 980000
+    ],
+    [
+      'appid' => 'wxe8ff2cd3378b31da',
+      'date' => '2020-03-10',
+      'cost' => 180000
+    ],
+]);
+$sign = hash_hmac("sha1", $body, $key);
+$res = $client->request('POST', $url, [
+  'headers' => [
+    'Content-Type' => 'application/json',
+    'X-Hub-Signature' => 'sha1='.$sign
+  ],
+  'body' => $body
+]);
+
+$body = $res->getBody();
+echo $body;
+
+```
 
